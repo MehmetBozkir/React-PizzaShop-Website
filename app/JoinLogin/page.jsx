@@ -1,5 +1,5 @@
 import React from 'react'
-import { JLDemo } from '@/components/JLDemo'
+import { JLDemo } from "../../components/JLDemo";
 
 function page() {
   return (
