@@ -14,7 +14,7 @@ import Typography from "@mui/joy/Typography";
 import { useState } from "react";
 import { IoSearch } from "react-icons/io5";
 import { Demo } from "@/components/Demo";
-import { BackgroundBeams } from "@/components/ui/background-beams";
+import { BackgroundBeams } from "../../components/ui/background-beams";
 
 function Page() {
   const { inc, dec, count, fishies, fetch } = useStore((state) => state);
