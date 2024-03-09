@@ -15,6 +15,7 @@ import { useState } from "react";
 import { IoSearch } from "react-icons/io5";
 import { BackgroundBeams } from "../../components/ui/background-beams";
 import { Demo } from "../../components/Demo"
+import Navbar from '../../components/Navbar'
 
 function Page() {
   const { inc, dec, count, fishies, fetch } = useStore((state) => state);
@@ -26,6 +27,8 @@ function Page() {
   }, []);
 
   return (
+    <>
+    <Navbar/>
     <div className="bg-neutral-950">
       <BackgroundBeams />
       <div className="flex justify-center">
@@ -99,6 +102,7 @@ function Page() {
 
       <Demo />
     </div>
+    </>
   );
 }
 
