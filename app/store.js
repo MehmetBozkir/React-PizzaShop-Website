@@ -2,23 +2,34 @@
 import create from "zustand";
 import axios from "axios";
 
-const URL = "https://65ea500ac9bf92ae3d3b5e78.mockapi.io/pizza/shop/test";
+const URL = "https://dummyjson.com/products";
 
 const useStore = create((set, get) => ({
-  count: 0,
+  count: "",
   fishies: [],
+  signfishies: {},
   loading: false,
+  test: "",
   fetch: async () => {
     try {
       const response = await axios(URL);
       console.log("response", response);
-      set({ loading: false, fishies: response.data });
+      set({ loading: false, fishies: response.data.products });
     } catch (error) {
       console.error("error", error);
     }
   },
-  inc: () => set((state) => ({ count: state.count + 1 })),
-  dec: () => set((state) => ({ count: state.count - 1 })),
+  signfetch: async ({ count }) => {
+    try {
+      const singleData = await axios(`https://dummyjson.com/products/${count}`);
+      set({ signfishies: singleData.data });
+      console.log("singleData", singleData);
+    } catch (error) {
+      console.error("error", error);
+    }
+  },
+  inc: () => set((state) => ({ productId: state.productId + 0 })),
+  dec: (count) => set(() => ({ count: count + 2 })),
 }));
 
 export default useStore;
