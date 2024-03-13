@@ -9,7 +9,7 @@ import { UserButton } from "@clerk/nextjs";
 const words = `Welcome to our pizza haven! Are you ready to embark on a journey of deliciousness? You're about to step into a world filled with mouthwatering flavors prepared with the freshest ingredients.
 `;
 
-export function LampDemo() {
+export function LampDemo2() {
   return (
     <div>
       <LampContainer>
@@ -30,10 +30,10 @@ export function LampDemo() {
           <TextGenerateEffect words={words} />
         </div>
         <div className="mt-24">
-          <button className="p-[3px] relative m-5 ">
+          <button className="p-[3px] relative m-5">
             <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
-            <div>
-              <UserButton />
+            <div className="px-8 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
+              <Link href={`/JoinLogin`}>Join & Login </Link>
             </div>
           </button>
 

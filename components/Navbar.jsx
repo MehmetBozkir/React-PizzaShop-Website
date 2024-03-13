@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Drawer from "./Drawer";
 import { FaHome } from "react-icons/fa";
+import { UserButton } from "@clerk/nextjs";
 
 function Navbar() {
   return (
@@ -20,8 +21,8 @@ function Navbar() {
         </button>
       </div>
       <div className="flex items-center gap-3 mr-80"></div>
-      <div className="flex-none">
-        <div className="dropdown dropdown-end">
+      <div className="flex-none ">
+        <div className="dropdown dropdown-end ">
           <div
             tabIndex={0}
             role="button"
@@ -61,6 +62,24 @@ function Navbar() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="flex-1">
+          <button>
+            <div className="indicator ml-8 mb-2 mr-6">
+              <div className=" indicator-item ">
+                {<UserButton /> ? (
+                  <UserButton />
+                ) : (
+                  <div className="w-10 rounded-full">
+                    <img
+                      alt="Tailwind CSS Navbar component"
+                      src="https://img.clerk.com/preview.png"
+                    />
+                  </div>
+                )}
+              </div>
+            </div>
+          </button>
         </div>
       </div>
     </div>
