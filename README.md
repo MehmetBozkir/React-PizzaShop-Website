@@ -1,7 +1,7 @@
 # React-PizzaShop-Website
 
 
-eCommorce Website Via Api | Nextjs,Axios , Zustand and Aceternity UI.
+eCommorce Website Via Api | Nextjs,Axios , Zustand , Authjs , Clerk and Aceternity UI.
 
 
 <p align="center"> 
@@ -12,7 +12,11 @@ eCommorce Website Via Api | Nextjs,Axios , Zustand and Aceternity UI.
   ----------------------------
 
   
-API configuration while performing Zustand operating logic and state management
+- API configuration while performing <b>Zustand</b> operating logic and state management.
+- Learning details such as logging in with <b>Authjs</b>, registering, and user profile.
+- <b>Clerk</b> integration.
+- Detailed UI design and innovative image quality with <b>Aceternity UI</b>.
+- Double platform deployment. ( <b>Vercel</b> / <b>Netlify</b> )
   
 <br> 
  
@@ -33,6 +37,7 @@ $ npm install
 $ npm run dev
 ```
 ## :link: Demo
-  - <a target="_blank" href="https://react-pizza-shop-xx.netlify.app/"> Click Here </a> to see and play by yourself a demo of the game.
+  - <a target="_blank" href="https://react-pizza-shop-x.netlify.app/"> Netflify </a> to see and examine by yourself a demo of the site.
+  - <a target="_blank" href="https://react-pizza-shop-website.vercel.app/"> Vercel </a> to see and examine by yourself a demo of the site.
 
 <br> 
