@@ -17,6 +17,7 @@ eCommorce Website Via Api | Nextjs,Axios , Zustand , Authjs , Clerk and Aceterni
 - <b>Clerk</b> integration.
 - Detailed UI design and innovative image quality with <b>Aceternity UI</b>.
 - Double platform deployment. ( <b>Vercel</b> / <b>Netlify</b> )
+- Shortcuts I created specifically for myself with the <b>Makefile</b> file.
   
 <br> 
  
