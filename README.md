@@ -9,7 +9,7 @@ eCommorce Website Via Api | Nextjs,Axios , Zustand , Authjs , Clerk and Aceterni
 <br> 
   
   :wrench: Features 
-  -----------------------------
+  ------------------------------
 
   
 - API configuration while performing <b>Zustand</b> operating logic and state management.
